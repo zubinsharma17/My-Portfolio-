@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1024, initial-scale-1.0">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
     <title>Zubin Portfolio</title>
     <link rel="website icon" type="jpg" href="images/logo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -13,8 +14,12 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+
 
 </head>
+
 
 <body>
     <header>
@@ -23,10 +28,7 @@
                 <a href="index.html"><img src="images/logo1.gif" class="logo" alt=""></a>
             </nav>
         </div>
-        <!--<button class="nav-toggle" , aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        -->
+
 
         <div class="container">
             <nav class="nav">
@@ -65,7 +67,7 @@
             <div class="row">
                 <a href="python.html" class="button">Python Certificates</a>
                 <a href="ml.html" class="button">ML Certificates</a>
-                <a href="frontend.html" class="button">Frontend Certificates</a>
+                <a href="frontend.html" class="button frontend">Frontend Certificates</a>
             </div>
             <div class="row">
                 <a href="da.html" class="button">Data Analyst</a>
@@ -77,30 +79,14 @@
         </div>
 
 
-        <p class="section__subtitle Subtitle--Gallery">Google Certificates</p>
-        <p></p>
-
-
-
-        <div class="certif">
-            <a href="pdf/certificate-google analytics begin.pdf" target="_blank"><img src="images/googleanalytics.JPG"
-                    alt="" class="portfolio__img_host" hspace=" -20%" height="72%" width="70%"></a>
-            <a href="pdf/digital marrketting certificate.pdf" target="_blank"><img src="images/digitalmarketting.JPG"
-                    alt="" class="portfolio__img_host"></a>
-
-        </div>
-        <p></p>
-
-
         <p class="section__subtitle Subtitle--Gallery">Extra Certificates</p>
         <p></p>
 
         <div class="certificate">
             <div class="item">
                 <a href="pdf/aws certificate in ml for business.pdf" target="_blank">
-                    <img src="images/aws.JPG" alt="AWS Certificate" class="portfolio__img_host" " alt="" class="
-                        portfolio__img_host" width="550px" height="350px"
-                        style="width: 550px !important; height: 350px !important;">
+                    <img src="images/aws.JPG" alt="AWS Certificate" class="portfolio__img_host" alt="" class="
+                        portfolio__img_host">
                     <div class="other-overlay">
                         <div class="text">AWS Certificate</div>
                     </div>
@@ -109,8 +95,8 @@
             <div class="item">
                 <a href="pdf/accenture certificate.pdf" target="_blank">
                     <img src="images/accenture.JPG" alt="Accenture Certificate"
-                        class="portfolio__img_host" " alt="" class=" portfolio__img_host" width="550px" height="350px"
-                        style="width: 550px !important; height: 350px !important;">
+                        class="portfolio__img_host" " alt="" class=" portfolio__img_host">
+
                     <div class="other-overlay">
                         <div class="text">Accenture Certificate</div>
                     </div>
@@ -119,8 +105,7 @@
             <div class="item">
                 <a href="pdf/coursera IBM data science.pdf" target="_blank">
                     <img src="images/coursera IBM data science.JPG" alt="Coursera Certificate"
-                        class="portfolio__img_host" " alt="" class=" portfolio__img_host" width="550px" height="350px"
-                        style="width: 550px !important; height: 350px !important;">
+                        class="portfolio__img_host" " alt="" class=" portfolio__img_host">
                     <div class="other-overlay">
                         <div class="text">IBM Certificate</div>
                     </div>
@@ -129,8 +114,7 @@
             <div class="item">
                 <a href="images/certificate-elements-of-ai.png" target="_blank">
                     <img src="images/certificate-elements-of-ai.png" alt="Elements of AI Certificate"
-                        class="portfolio__img_host" " alt="" class=" portfolio__img_host" width="550px" height="350px"
-                        style="width: 550px !important; height: 350px !important;">
+                        class="portfolio__img_host" " alt="" class=" portfolio__img_host">
                     <div class="other-overlay ">
                         <div class="text">Elements of AI Certificate</div>
                     </div>
@@ -139,64 +123,122 @@
         </div>
 
 
-        <p></p>
+
+        <p class="section__subtitle Subtitle--Gallery">Click Below👇 to see the certificates</p>
 
 
-
-        <p class="section__subtitle Subtitle--Gallery">Bootcamps I attended</p>
-        <p></p>
-
-        <div class="certif">
-            <a href="pdf/certificate for boot camp-node js.pdf" target="_blank"><img src="images/bootcammp.JPG" alt=""
-                    class="portfolio__img_host" width="40%"></a>
-
-
+        <div class="tabbed-gallery">
+            <div class="row1">
+                <div class="column1">
+                <button class="button1">Google</button>
+                </div>
+                <div class="column1">
+                <button class="button1">BootCamp</button>
+                </div>
+                <div class="column-full">
+                <button class="button1">Event Management</button>
+                </div>
+            </div>
+            <div id="New York" class="city hidden-city">
+                <img src="images/googleanalytics.JPG" alt="Google" class="" />
+                <!--<p>Google</p> -->
+            </div>
+            <div id="Honolulu" class="city hidden-city">
+                <img src="images/bootcammp.JPG" alt="Bootcamp" class="" />
+                <!--<p>Bootcamp</p>-->
+            </div>
+            <div id="Seoul" class="city hidden-city">
+                <img src="images/ranbhoomi.jpg" alt="Event Management" class="" />
+               <!-- <p>Event Management</p>-->
+            </div>
         </div>
-        <p></p>
-
-        <p class="section__subtitle Subtitle--Gallery">Training Certificates</p>
-        <p></p>
-
-        <div class="certifi">
-            <a href="images/sofcon.jpg" target="_blank"><img src="images/sofcon.jpg" alt=""
-                    class="portfolio__img_host"></a>
-
         </div>
-        <p></p>
-        <p class="section__subtitle Subtitle--Gallery">Event Management</p>
-        <p></p>
-
-        <div class="certif">
-            <a href="images/ranbhoomi.jpg" target="_blank">
-                <p><img src="images/ranbhoomi.jpg" alt="" class="portfolio__img_host" width="98%" height="94%">
-
-                </p>
-            </a>
-            <a href="images/alumnimeet.jpg" target="_blank">
-                <p><img src="images/alumnimeet.jpg" alt="" class="portfolio__img_host" height="98%"></p>
-            </a>
-
-        </div>
-        <p></p>
-
-        <p class="section__subtitle Subtitle--Gallery">Quiz Participation</p>
-        <p></p>
-
-        <div class="certif">
-            <a href="images/quiz participation 1.jpg" target="_blank"><img src="images/quiz participation 1.jpg" alt=""
-                    class="portfolio__img_host" width="55%"></a>
-
-        </div>
-        <p></p>
-
-        <body class="scrollable">
-            <button class="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Top⬆</button>
-            <button class="my-back-button" onclick="window.history.back()">⬅Back</button>
 
 
-        </body>
+        <p class="section__subtitle Subtitle--Gallery">Some Extra Certificates </p>
+      
+        
+        <div class="photo-grid">
+            <div class="photo-item">
+              <img src="images/alumnimeet.jpg" alt="Image 1">
+              <div class="overlay">
+                <h3>Image 1</h3>
+                <a href="#" class="btn">Certificate</a>
+              </div>
+            </div>
+            <div class="photo-item">
+              <img src="images/digitalmarketting.JPG" alt="Image 2">
+              <div class="overlay">
+                <h3>Image 2</h3>
+                <a href="#" class="btn">Certificate</a>
+              </div>
+            </div>
+            <div class="photo-item">
+              <img src="images/quiz participation 1.jpg" alt="Image 3">
+              <div class="overlay">
+                <h3>Image 3</h3>
+                <a href="#" class="btn">Certificate</a>
+              </div>
+            </div>
+            <div class="photo-item">
+              <img src="images/sofcon.jpg" alt="Image 4">
+              <div class="overlay">
+                <h3>Image 4</h3>
+                <a href="" class="btn">Certificate</a>
+              </div>
+            </div>
+          </div>
+          
+          
 
-
+        <div class="photo-gallery">
+            <div class="gallery-item">
+              <div class="card">
+                <div class="card-front">
+                  <img src="images/sofcon.jpg" alt="Image 1">
+                </div>
+                <div class="card-back">
+                  <h3>Training Certificate</h3>
+                  <p>Industrial Training Certificate in IOT domain.</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="card">
+                <div class="card-front">
+                  <img src="images/alumnimeet.jpg" alt="Image 2">
+                </div>
+                <div class="card-back">
+                  <h3>Event</h3>
+                  <p>Event Managing Certificate.</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="card">
+                <div class="card-front">
+                  <img src="images/digitalmarketting.JPG" alt="Image 3">
+                </div>
+                <div class="card-back">
+                  <h3>Google Digital Marrketting<h3>
+                  <p>Certificate for Marketting Tricks.</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <div class="card">
+                <div class="card-front">
+                  <img src="images/quiz participation 1.jpg" alt="Image 4">
+                </div>
+                <div class="card-back">
+                  <h3>One Stop</h3>
+                  <p>Quiz Participation in BITS Pilani.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
         <!--footer-->
         <footer class="footer" id="footer">
             <div class="footer__social">
@@ -215,7 +257,9 @@
                 <p class="footer-text">&copy;Zubin Sharma</p>
             </div>
         </footer>
-        <script src="js/index.js"></script>
-</body>
 
-</html>
+
+    <script src="js/photos.js" ></script>    
+    </body>
+        </html>
+        
