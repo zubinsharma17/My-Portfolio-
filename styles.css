@@ -7,13 +7,21 @@
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
 
+     --fs-body: 1rem;
     --clr-light: lightyellow;
     --clr-dark: black;
     --clr-accent: #B87333;
     --clr-light-accennt: #da8a67;
 }
 
-
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
 
 .button {
     display: inline-block;
