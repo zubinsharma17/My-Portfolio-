@@ -61,19 +61,6 @@ body {
     }
 }
 
-@media screen and (max-width: 1025px) {
-  body {
-    zoom: 0.1; 
-  }
-}
-
-@media screen and (min-width: 1026px) {
-  body {
-    zoom: 1; 
-  }
-}
-
-
 .row {
     display: flex;
     justify-content: center;
