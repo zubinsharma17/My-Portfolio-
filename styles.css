@@ -61,6 +61,12 @@ body {
     }
 }
 
+@media screen and (max-width: 1020px) {
+  body {
+    zoom: 0.5; 
+  }
+}
+
 
 .row {
     display: flex;
