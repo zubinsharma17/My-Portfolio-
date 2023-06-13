@@ -61,9 +61,11 @@ body {
     }
 }
 
-body {
+@media screen and (max-width: 1030px) {
+  body {
     zoom: 0.5; 
   }
+}
 
 
 .row {
