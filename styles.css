@@ -61,11 +61,9 @@ body {
     }
 }
 
-@media screen and (max-width: 1020px) {
-  body {
+body {
     zoom: 0.5; 
   }
-}
 
 
 .row {
@@ -288,7 +286,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.colummn1 {
+.column1 {
     flex-basis: 48%;
 
 }
@@ -307,8 +305,11 @@ nav ul li a:hover {
         justify-content: flex-start;
     }
     .colummn1:first-child{
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
+    .column-full {
+    margin-top: 40px; 
+  }
 }
 
 .button1 {
